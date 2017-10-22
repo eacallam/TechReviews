@@ -4,61 +4,68 @@
     ViewBag.Title = "Details";
 }
 
-<h1>The Scoop</h1>
+@*Edited this section to have the reviews present in blog/article format*@
 
-<div>
-    <hr />
-    <div>
+<body class="details-bg">
+    <div class="white-bg">
+        <h5>@Html.DisplayFor(model => model.Title)</h5>
 
-      <h4>@Html.DisplayFor(model => model.Title)<br />
-   
 
-            @if (Model.Rating == 1)
+        <hr />
+        <div class="details-div">
+
+            <h6>
+
+                @if (Model.Rating == 1)
             {
-                <span class="glyphicon glyphicon-star"></span>
-            }
-            else if (Model.Rating == 2)
-            {
-                <span class="glyphicon glyphicon-star"></span>
-                <span class="glyphicon glyphicon-star"></span>
-            }
-            else if (Model.Rating == 3)
-            {
-                <span class="glyphicon glyphicon-star"></span>
-                <span class="glyphicon glyphicon-star"></span>
-                <span class="glyphicon glyphicon-star"></span>
-            }
-            else if (Model.Rating == 4)
-            {
-                <span class="glyphicon glyphicon-star"></span>
-                <span class="glyphicon glyphicon-star"></span>
-                <span class="glyphicon glyphicon-star"></span>
-                <span class="glyphicon glyphicon-star"></span>
-            }
-            else if (Model.Rating == 5)
-            {
-                <span class="glyphicon glyphicon-star"></span>
-                <span class="glyphicon glyphicon-star"></span>
-                <span class="glyphicon glyphicon-star"></span>
-                <span class="glyphicon glyphicon-star"></span>
-                <span class="glyphicon glyphicon-star"></span>
-            }
-  </h4>
+                    <span class="glyphicon glyphicon-star"></span>
+                }
+                else if (Model.Rating == 2)
+                {
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                }
+                else if (Model.Rating == 3)
+                {
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                }
+                else if (Model.Rating == 4)
+                {
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                }
+                else if (Model.Rating == 5)
+                {
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                }
+            </h6>
+
+            <h3>
+                @Html.DisplayFor(model => model.Content)<br /><br />
+            </h3>
 
 
-        @Html.DisplayFor(model => model.Content)<br /><br />
+            <b>@Html.DisplayNameFor(model => model.Author):</b> @Html.DisplayFor(model => model.Author)<br />
 
-
-  
-           <b>@Html.DisplayNameFor(model => model.Author):</b> @Html.DisplayFor(model => model.Author)
-     
             <b>@Html.DisplayNameFor(model => model.DateVisited):</b> @Html.DisplayFor(model => model.DateVisited)<br />
+            <b>Date Submitted: </b>@Html.DisplayFor(model => model.DateCreated)<br />
+            <b>Tag:</b> @Html.DisplayFor(model => model.Category.Name)<br />
 
-            @Html.DisplayFor(model => model.Category.Name), @Html.DisplayFor(model => model.DateCreated)
-  
-</div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
+
+            <p>
+                @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+                @Html.ActionLink("Back to List", "Index")
+            </p>
+        </div>
+
     </div>
+</body>
+    

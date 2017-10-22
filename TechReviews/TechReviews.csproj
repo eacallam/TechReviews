@@ -169,6 +169,11 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201710200026578_InitialCreate.cs" />
+    <Compile Include="Migrations\201710200026578_InitialCreate.Designer.cs">
+      <DependentUpon>201710200026578_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Review.cs" />
     <Compile Include="Models\TechReviewsContext.cs" />
@@ -183,7 +188,13 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\crayons.jpg" />
     <Content Include="Content\cup-2315554_960_720.jpg" />
+    <Content Include="Content\flowers.jpg" />
     <Content Include="Content\green-1738220_960_720.jpg" />
+    <Content Include="Content\pattern-bg.jpg" />
+    <Content Include="Content\pattern-bg2.jpg" />
+    <Content Include="Content\pattern-bg3.jpg" />
+    <Content Include="Content\pattern-bg4.jpg" />
+    <Content Include="Content\pattern-bg5.jpg" />
     <Content Include="Content\salad-2068220_960_720.jpg" />
     <Content Include="Content\star.jpg" />
     <Content Include="favicon.ico" />
@@ -252,6 +263,11 @@
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-3.2.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.2.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201710200026578_InitialCreate.resx">
+      <DependentUpon>201710200026578_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

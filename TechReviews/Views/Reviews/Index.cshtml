@@ -4,6 +4,9 @@
     ViewBag.Title = "Index";
 }
 
+@*//Edited this section to put the reviews in divs rather than a table*@
+
+
 <h2>Reviews</h2>
 
 <p>
@@ -12,15 +15,14 @@
 
 @foreach (var item in Model)
 {
-    <div class="review col-lg-4 col-md-4 col-sm-12 col-xs-12">
+    <div class="review col-lg-3 col-md-3 col-sm-12 col-xs-12">
 
+        <b>@Html.DisplayNameFor(model => model.Title):</b> @Html.DisplayFor(modelItem => item.Title)<br />
 
         <b>@Html.DisplayNameFor(model => model.Category.Name):</b> @Html.DisplayFor(modelItem => item.Category.Name) <br />
 
         <b>@Html.DisplayNameFor(model => model.Author):</b> @Html.DisplayFor(modelItem => item.Author)<br />
-
-        <b>@Html.DisplayNameFor(model => model.Title):</b> @Html.DisplayFor(modelItem => item.Title)<br />
-
+        
         <b>@Html.DisplayNameFor(model => model.DateVisited):</b> @Html.DisplayFor(modelItem => item.DateVisited)<br />
 
         <b>@Html.DisplayNameFor(model => model.Rating):</b>

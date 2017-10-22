@@ -10,7 +10,11 @@ namespace TechReviews.Models
 {
     public class Review
     {
-
+        //Created a Primary Key to identify each record
+        //Created the fields I wanted each review record to have
+        //Formatted the date fields and set a range for the rating (should only be 1, 2, 3, 4 or 5)
+        //Set the date review was created to automatically populate 
+        //Created ForeignKey to access the Category model
         [Key]
         public int ID { get; set; }
         public string Author { get; set; }

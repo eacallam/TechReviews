@@ -23,18 +23,26 @@ textarea {
     max-width: 280px;
 }
 
+.jumbotron{
+    border: 7px solid lightgray;
+    min-height: 230px;
+}
+
 .review {
     color: black;
-    background-color: rgba(255, 255, 255, 0.30);
+    font-family: calibri;
+    font-size: 14px;
+    background-color: lightyellow;
     padding: 10px;
     margin: 10px;
-    border: 1px solid gray;
+    border: 3px solid gold;
 }
 
 .header-bg {
     background-image: url('crayons.jpg');
     background-size: cover;
 }
+
 
 h2{
         font-family: 'Pacifico', cursive;
@@ -44,9 +52,62 @@ h4{
         font-family: 'Pacifico', cursive;
 }
 
+h6{
+font-family: 'Kreon', serif;
+text-align: center;
+font-size: 30px;
+}
+
+h5 {
+    font-family: 'Kreon', serif;
+    font-weight: bold;
+    font-size: 42px;
+    margin-top: 20px;
+    text-align: center;
+    color: black;
+}
+
 h1{
     font-family: 'Fredoka One', cursive;
+    padding-top: 0px;
+    margin-top: -16px;
+    border-top: 0px;
 }
+
+footer{
+   text-align: center;
+}
+
+
+.details-bg {
+    background-color: tan;
+    background-image: url('pattern-bg4.jpg');
+}
+
+.white-bg{
+    background-color: white;
+}
+
+.details-div{
+    color: black;
+    font-family: calibri;
+    font-size: 14px;
+    padding: 10px;
+    margin-top: -40px;
+}
+
+h3 {
+    font-family: 'Times New Roman';
+    font-size: 18px;
+    text-align: center;
+}
+
+.btn {
+    font-weight: bold;
+    background-image: url('pattern-bg5.jpg');
+}
+
+
 
 
 
