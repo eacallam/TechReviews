@@ -22,3 +22,33 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.review {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.30);
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid gray;
+}
+
+.header-bg {
+    background-image: url('crayons.jpg');
+    background-size: cover;
+}
+
+h2{
+        font-family: 'Pacifico', cursive;
+}
+
+h4{
+        font-family: 'Pacifico', cursive;
+}
+
+h1{
+    font-family: 'Fredoka One', cursive;
+}
+
+
+
+
+

@@ -4,57 +4,22 @@
     ViewBag.Title = "Details";
 }
 
-<h2>Details</h2>
+<h1>The Scoop</h1>
 
 <div>
-    <h4>Review</h4>
     <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Category.Name)
-        </dt>
+    <div>
 
-        <dd>
-            @Html.DisplayFor(model => model.Category.Name)
-        </dd>
+      <h4>@Html.DisplayFor(model => model.Title)<br />
+   
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Author)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Author)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Title)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Title)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.DateVisited)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.DateVisited)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Rating)
-        </dt>
-
-        <dd>
-            
             @if (Model.Rating == 1)
             {
                 <span class="glyphicon glyphicon-star"></span>
             }
             else if (Model.Rating == 2)
             {
-                <span class="glyphicon glyphicon-star"></span> 
+                <span class="glyphicon glyphicon-star"></span>
                 <span class="glyphicon glyphicon-star"></span>
             }
             else if (Model.Rating == 3)
@@ -65,8 +30,8 @@
             }
             else if (Model.Rating == 4)
             {
-                <span class="glyphicon glyphicon-star"></span> 
-                <span class="glyphicon glyphicon-star"></span> 
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
                 <span class="glyphicon glyphicon-star"></span>
                 <span class="glyphicon glyphicon-star"></span>
             }
@@ -78,27 +43,22 @@
                 <span class="glyphicon glyphicon-star"></span>
                 <span class="glyphicon glyphicon-star"></span>
             }
-        </dd>
+  </h4>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.DateCreated)
-        </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.DateCreated)
-        </dd>
+        @Html.DisplayFor(model => model.Content)<br /><br />
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Content)
-        </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Content)
-        </dd>
+  
+           <b>@Html.DisplayNameFor(model => model.Author):</b> @Html.DisplayFor(model => model.Author)
+     
+            <b>@Html.DisplayNameFor(model => model.DateVisited):</b> @Html.DisplayFor(model => model.DateVisited)<br />
 
-    </dl>
+            @Html.DisplayFor(model => model.Category.Name), @Html.DisplayFor(model => model.DateCreated)
+  
 </div>
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
     @Html.ActionLink("Back to List", "Index")
 </p>
+    </div>
