@@ -173,6 +173,10 @@
     <Compile Include="Migrations\201710200026578_InitialCreate.Designer.cs">
       <DependentUpon>201710200026578_InitialCreate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201710221902014_SeedData.cs" />
+    <Compile Include="Migrations\201710221902014_SeedData.Designer.cs">
+      <DependentUpon>201710221902014_SeedData.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Review.cs" />
@@ -267,6 +271,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201710200026578_InitialCreate.resx">
       <DependentUpon>201710200026578_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710221902014_SeedData.resx">
+      <DependentUpon>201710221902014_SeedData.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
